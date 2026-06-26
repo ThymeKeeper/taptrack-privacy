@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>TapTrack — Privacy Policy</title>
-<meta name="description" content="Privacy policy for the TapTrack GPS waypoint logger app.">
+<meta name="description" content="Privacy policy for the TapTrack GPS field-survey app.">
 <style>
   :root {
     --bg: #fbfdfa;
@@ -56,43 +56,71 @@
   <div class="wrap">
     <header>
       <svg viewBox="0 0 24 24" aria-hidden="true">
-        <path fill="var(--accent)" d="M12,2C8.13,2 5,5.13 5,9c0,5.25 7,13 7,13s7,-7.75 7,-13c0,-3.87 -3.13,-7 -7,-7zM12,11.5c-1.38,0 -2.5,-1.12 -2.5,-2.5s1.12,-2.5 2.5,-2.5 2.5,1.12 2.5,2.5 -1.12,2.5 -2.5,2.5z"/>
+        <circle cx="12" cy="12" r="9.2" fill="none" stroke="var(--accent)" stroke-width="1.2" opacity="0.4"/>
+        <circle cx="12" cy="12" r="5.6" fill="none" stroke="var(--accent)" stroke-width="1.7"/>
+        <circle cx="12" cy="12" r="2.4" fill="var(--accent)"/>
       </svg>
       <h1>TapTrack — Privacy Policy</h1>
     </header>
-    <p class="updated">Last updated: June 24, 2026</p>
+    <p class="updated">Last updated: June 26, 2026</p>
 
-    <p>TapTrack (&ldquo;the app&rdquo;) is a GPS waypoint logger. This policy explains what the app
-       accesses and how your data is handled.</p>
+    <p>TapTrack (&ldquo;the app&rdquo;) is a GPS field-survey app that logs the locations of points you
+       tap. This policy explains what the app accesses and how your data is handled. In short:
+       <strong>your survey data stays on your device</strong>, and there is no account or sign-in.</p>
 
     <div class="card">
       <h2>What the app accesses</h2>
       <ul>
-        <li><strong>Location:</strong> When you run a recording session, the app accesses your
-            device&rsquo;s GPS location to save the coordinates of each point you log. Location is
-            accessed only while a session is active.</li>
+        <li><strong>Location:</strong> while a session is open, the app reads your device&rsquo;s GPS
+            location to save the coordinates of each point you log.</li>
+        <li><strong>Camera &amp; photos:</strong> when you choose to attach a photo to a point, the app
+            uses your camera. The photo (with its GPS location and time) is saved with the session on
+            your device. The app does not access your existing photo gallery.</li>
       </ul>
 
       <h2>How your data is stored</h2>
       <ul>
-        <li>All sessions and points are stored <strong>locally on your device</strong>.</li>
-        <li>The app does <strong>not</strong> transmit your location or session data to the
-            developer or any third party.</li>
-        <li>The app contains <strong>no advertising</strong> and <strong>no third-party analytics
-            or tracking</strong>.</li>
+        <li>All sessions, points, photos, and notes are stored <strong>locally on your device</strong>.</li>
+        <li>The app has <strong>no user accounts and no sign-in</strong>.</li>
+        <li>The app does <strong>not</strong> send your sessions, points, photos, or notes to the
+            developer or to any server.</li>
+        <li>The app contains <strong>no advertising</strong> and <strong>no analytics or tracking</strong>.</li>
       </ul>
 
-      <h2>Sharing</h2>
+      <h2>Maps</h2>
       <ul>
-        <li>You can export a session (GPX/CSV) with the in-app Share button. The data then goes
-            only to the destination you choose. The developer never receives it.</li>
+        <li>To draw the map, the app downloads map tiles from
+            <strong>OpenStreetMap</strong> (openstreetmap.org). As with any map app, these requests
+            reveal the map area you are viewing and your device&rsquo;s IP address to OpenStreetMap,
+            handled under the
+            <a href="https://wiki.osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap Foundation&rsquo;s
+            privacy policy</a>. No account or personal identifier is sent.</li>
+      </ul>
+
+      <h2>Purchases</h2>
+      <ul>
+        <li>An optional one-time &ldquo;Pro&rdquo; purchase (which removes a watermark from exported
+            reports) is handled entirely by <strong>Google Play</strong>. TapTrack never sees or stores
+            your payment details; the transaction is governed by
+            <a href="https://policies.google.com/privacy">Google&rsquo;s privacy policy</a>.</li>
+      </ul>
+
+      <h2>Sharing &amp; export</h2>
+      <ul>
+        <li>You can export a session with the in-app Share button (an HTML report, plus GeoJSON, CSV,
+            GPX, KML, and your photos). The data goes <strong>only to the destination you choose</strong>
+            &mdash; the developer never receives it. The HTML report may include a baked-in map image
+            built from OpenStreetMap tiles, as described under &ldquo;Maps&rdquo; above.</li>
       </ul>
 
       <h2>Permissions used</h2>
       <ul>
         <li><strong>Location (fine/coarse):</strong> to record GPS coordinates.</li>
-        <li><strong>Foreground service, notifications, wake lock:</strong> to keep recording
-            reliably while a session runs, including with the screen off.</li>
+        <li><strong>Camera:</strong> to take photos you attach to points (only when you tap the camera).</li>
+        <li><strong>Internet &amp; network state:</strong> to download map tiles and, optionally, to
+            process a Google Play purchase.</li>
+        <li><strong>Foreground service, notifications, wake lock:</strong> to keep recording reliably
+            while a session runs, including with the screen off.</li>
         <li><strong>Vibrate:</strong> to confirm a recorded point.</li>
       </ul>
 
