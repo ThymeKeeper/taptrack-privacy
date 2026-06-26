@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>TapTrack — Foreground service (location) demo</title>
+<style>
+  body{margin:0;background:#101512;color:#e1e3df;font:16px/1.55 -apple-system,system-ui,sans-serif;
+       display:flex;flex-direction:column;align-items:center;padding:26px 18px 48px;}
+  h1{font-size:1.12rem;font-weight:600;text-align:center;margin:0 0 14px;}
+  video{max-width:100%;max-height:78vh;border-radius:14px;background:#000;}
+  p{color:#a7b1ab;max-width:580px;text-align:center;font-size:0.95rem;}
+</style></head><body>
+  <h1>TapTrack — FOREGROUND_SERVICE_LOCATION demo</h1>
+  <video controls autoplay muted playsinline src="fgs-demo.mp4"></video>
+  <p>A session is started (a foreground service begins). GPS points are logged with a live location
+     readout, then the app is sent to the background to show the persistent &ldquo;active session&rdquo;
+     notification — the foreground service keeps tracking location so points can be logged even with
+     the screen off. The session is then ended and the service stops.</p>
+</body></html>
